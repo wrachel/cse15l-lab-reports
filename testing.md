@@ -1,3 +1,5 @@
+{% include navigation.html %}
+
 # Testing Markdown Syntax
 
 ### Smaller heading 
