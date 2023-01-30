@@ -69,4 +69,8 @@ static double averageWithoutLowest(double[] arr) {
     return sum / (arr.length - numLowest);
   }
 ```
-The corrected code fixes the bug by accounting for the possibility that the lowest number repeats multiple times. In the for loop that iterates through the array, 
+The corrected code fixes the bug by accounting for the possibility that the lowest number repeats multiple times. In the second for loop that iterates through the array, if the number is equal to the lowest, it increments the variable "numLowest." Returning `sum / (arr.length - numLowest)` accounts for the fact that the lowest number may appear multiple times. 
+
+After fixing the bug, both JUnit tests have no failures:
+![image](https://user-images.githubusercontent.com/40574565/215364080-37fc4bc9-62cb-407c-be60-caeec71817fa.png)
+
