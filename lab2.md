@@ -26,7 +26,7 @@ class Handler implements URLHandler{
             return concatQueries;
         }
         else{
-            return "404 Not found";
+            return "Not found";
         }
         
     }
@@ -46,9 +46,23 @@ class StringServer{
 }
 
 ```
+Two screenshots of method being used:
+![image](https://user-images.githubusercontent.com/40574565/215366072-971fbd7d-dcd9-44f6-b4f8-0d3499c105fe.png)
+
 * The class Handler() and method handleRequest(URI url) in the class Handler is called. 
-* The relevant arguments to this method is the URI in the parameter, which gets the entire web address. Then the if loop checks if the URL path contains /add-message. The parameters split the query by the "=". `parameters[1]` in the code gets the value to display on the web page and concats to the variable concatQueries. concatQueries is an arraylist of all the total messages added. Another relevant argument is the args[] in the main method which gets the port.
-* The relevant fields of the class change depending on what users input. For example, the URI depends on what the user inputs. If the user does not input  `add-message` it will return a 404 error. Or, for example, if the user puts /add-message?s=Home, the value of parameters[1] changes and the webpage will display Home. 
+* The relevant arguments to this method is the URI in the parameter, which gets the entire web address. Then the if loop checks if the URL path contains /add-message. The parameters split the query by the "=". `parameters[1]` becomes grapes, and the code adds that to an arraylist. The arraylist concats all the values to the String concatQueries and returns this variable, which gets displayed on the web page. Another relevant argument is the args[] in the main method which gets the port 4000.
+* The relevant fields of the class change depending on what users input. For example, the URI depends on what the user inputs. Here, I used the input /add-message?s=grapes, which displays grapes on the page. If the user does not input  `add-message` it will return a 404 error or put something else besides grapes, it would display something differet.
+
+![image](https://user-images.githubusercontent.com/40574565/215366311-f14a0814-047c-407c-988b-fd5b7dc2c866.png)
+* The class Handler() and method handleRequest(URI url) in the class Handler is called. 
+* The relevant arguments to this method is the URI in the parameter, which gets the entire web address. Then the if loop checks if the URL path contains /add-message. The parameters split the query by the "=". `parameters[1]` becomes hello, and the code adds that to the arraylist totalQueries, which already contains grapes. The arraylist concats all the values to the String concatQueries and returns this variable, which gets displayed on the web page. Then, the webpage displays both grapes and hello. 
+* The relevant fields of the class change depending on what users input. For example, the URI depends on what the user inputs. Here, I used the input /add-message?s=hello, which displays hello on the page, in addition to grapes. 
+
+![image](https://user-images.githubusercontent.com/40574565/215366441-7da30de1-1d35-4f92-94ed-28dc2575790e.png)
+In this image:
+* The class Handler() and method handleRequest(URI url) in the class Handler is called. 
+* The relevant arguments to this method is the URI in the parameter, which gets the entire web address. Then the if loop checks if the URL path contains /add-message. Since it doesn't a "Not found" message is displayed. 
+* The relevant fields of the class change depending on what users input. For example, the URI depends on what the user inputs. Here, I did not use /add-message, which changes what would be displayed. 
 
 ## Part 2
 
@@ -121,3 +135,4 @@ The corrected code fixes the bug by accounting for the possibility that the lowe
 After fixing the bug, both JUnit tests have no failures:
 ![image](https://user-images.githubusercontent.com/40574565/215364080-37fc4bc9-62cb-407c-be60-caeec71817fa.png)
 
+## Part 3
