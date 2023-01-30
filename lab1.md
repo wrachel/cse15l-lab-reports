@@ -32,18 +32,21 @@ If it is the users' first tie logging in in awhile, it may shows some notices af
 
 ## Trying Some Commands
 After logging in through ssh, I tested some commands:
-* ls
-* cd ~ 
-* ls -a
+```java
+ls //lists all the files in the current directory
+cd ~  //changes the director to the home directory
+ls -a //lists all files, including hidden files, in the current directory
+pwd //prints the working directory
+```
 
 First, I typed `ls` to list all the directories, and found that there were many directories for all the individual accounts. 
+![image](https://user-images.githubusercontent.com/40574565/215430115-ada8db02-fd5a-4516-9da9-ad48f660ef49.png)
 
-In order to access my home directory, I typed in the command `cd ~`. 
-
-Again, I typed `ls` to see the files in that directory and only found perl5. 
-
+In order to access my home directory, I typed in the command `cd ~`.  
 I then typed in the command `ls -a`, which lists all files, including hidden ones. This is why additional files, like .bash_profile can be seen. 
-![image](https://user-images.githubusercontent.com/40574565/212201884-79c3025d-5251-4c18-9657-b4310fd2f703.png)
+I typed the command pwd to print the working directory, and confirmed I was in my home directory.
+![image](https://user-images.githubusercontent.com/40574565/215430193-60667549-91e4-464e-ad8a-df964bf5a059.png)
+
 
 
 
