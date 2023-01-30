@@ -136,3 +136,4 @@ After fixing the bug, both JUnit tests have no failures:
 ![image](https://user-images.githubusercontent.com/40574565/215364080-37fc4bc9-62cb-407c-be60-caeec71817fa.png)
 
 ## Part 3
+Through lab 2, I learned how to create and write my own web server. Specifically, I found it really interesting to learn how to split the URL by queries. So, in this case, you split the url by '=' and put the contents of the URL into an array to access the individual parts of the entire URL, such as the query. I also learned how to display this on localhost by using a Server and hosting it on a port. Before, I did not know how to manipulate the URL and use URL inputs to update a web server. I only knew how to statically display things on a webpage, so that was something new I learned this lab. 
