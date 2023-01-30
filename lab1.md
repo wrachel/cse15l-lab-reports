@@ -22,7 +22,11 @@ I found my individual account on [this website](https://sdacs.ucsd.edu/~icc/inde
 ### Connect in VSCode
 Open in VSCode terminal. Make sure terminal is set to bash. In order to do this, search `Terminal: Select Default Profile` and set it to Bash. 
 
-In VSCode terminal, type `ssh cs15lwi23xxx@ieng6.ucsd.edu` where xxx is the same 3 unique letters given earlier. After putting this in the terminal, the output should look like the screenshot below. It shows some notices once logged in. The notice explains that `Authorized use of this system is limited to password-authenticated usernames which are issued to individuals and are for the sole use of the person to whom they are issued....`. These notices are displayed when a user ssh's in, and can largely be ignored. 
+In VSCode terminal, type `ssh cs15lwi23xxx@ieng6.ucsd.edu` where xxx is the same 3 unique letters given earlier. After putting this in the terminal, the output should look like the screenshot below. 
+![image](https://user-images.githubusercontent.com/40574565/215428397-fc003736-63ad-4e1f-a51d-fe99ce46c0b8.png)
+After logging in, the terminal will display information such as the last login time, which server (e.g. ieng6-202.ucsd.edu) the user was logged into, the CPU usage on the system. This screenshot includes a network delay issue causing slowness on the system. This is purely a notice and shouldn't significantly affect the user.
+
+If it is the users' first tie logging in in awhile, it may shows some notices after logging in (displayed in the iage below). The notice explains that `Authorized use of this system is limited to password-authenticated usernames which are issued to individuals and are for the sole use of the person to whom they are issued....`. These notices are displayed when a user ssh's in if they have not logged in for awhile, and can largely be ignored.  
 ![image](https://user-images.githubusercontent.com/40574565/212201442-09546375-bafc-49a6-bad9-6771f58772d4.png)
 * special note, when typing in the password nothing will show up on the screen for privacy reasons to hide the password.
 
