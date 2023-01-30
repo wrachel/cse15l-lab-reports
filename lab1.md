@@ -1,5 +1,3 @@
-{% include navigation.html %}
-
 # Lab Report 1
 
 This lab report details how to install VScode and remotely connect through ssh using a unique individual email.
