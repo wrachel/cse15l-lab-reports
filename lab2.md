@@ -46,6 +46,9 @@ class StringServer{
 }
 
 ```
+* The class Handler() and method handleRequest(URI url) in the class Handler is called. 
+* The relevant arguments to this method is the URI in the parameter, which gets the entire web address. Then the if loop checks if the URL path contains /add-message. The parameters split the query by the "=". `parameters[1]` in the code gets the value to display on the web page and concats to the variable concatQueries. concatQueries is an arraylist of all the total messages added. Another relevant argument is the args[] in the main method which gets the port.
+* The relevant fields of the class change depending on what users input. For example, the URI depends on what the user inputs. If the user does not input  `add-message` it will return a 404 error. Or, for example, if the user puts /add-message?s=Home, the value of parameters[1] changes and the webpage will display Home. 
 
 ## Part 2
 
