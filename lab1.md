@@ -18,13 +18,26 @@ I found my individual account on [this website](https://sdacs.ucsd.edu/~icc/inde
 ### Connect in VSCode
 Open in VSCode terminal. Make sure terminal is set to bash. In order to do this, search `Terminal: Select Default Profile` and set it to Bash. 
 
-In VSCode terminal, type `ssh cs15lwi23xxx@ieng6.ucsd.edu` where xxx is the same 3 unique letters given earlier. After putting this in the terminal, the output should look like the screenshot below. It shows some notices, etc. once logged in.
+In VSCode terminal, type `ssh cs15lwi23xxx@ieng6.ucsd.edu` where xxx is the same 3 unique letters given earlier. After putting this in the terminal, the output should look like the screenshot below. It shows some notices once logged in. The notice explains that `Authorized use of this system is limited to password-authenticated usernames which are issued to individuals and are for the sole use of the person to whom they are issued....`. These notices are displayed when a user ssh's in, and can largely be ignored. 
 ![image](https://user-images.githubusercontent.com/40574565/212201442-09546375-bafc-49a6-bad9-6771f58772d4.png)
 * special note, when typing in the password nothing will show up on the screen for privacy reasons to hide the password.
 
+If VSCode is not already downloaded, head to the VSCode website: [https://code.visualstudio.com/](https://code.visualstudio.com/).
+At the VSCode website, click donwload for the correct OS System. For example, for Windows OS, click Windows. For Mac OS, click macOS.
+![image](https://user-images.githubusercontent.com/40574565/215368551-96e96f06-22bb-498f-8dae-092ef74bc297.png)
+
+
 ## Trying Some Commands
-After logging in through ssh, I tested some commands.
-First, I typed `ls` to list all the directories, and found that there were many directories for all the individual accounts. In order to access my home directory, I typed in the command `cd ~`. Again, I typed `ls` to see the files in that directory and only found perl5. 
+After logging in through ssh, I tested some commands:
+* ls
+* cd ~ 
+* ls -a
+
+First, I typed `ls` to list all the directories, and found that there were many directories for all the individual accounts. 
+
+In order to access my home directory, I typed in the command `cd ~`. 
+
+Again, I typed `ls` to see the files in that directory and only found perl5. 
 
 I then typed in the command `ls -a`, which lists all files, including hidden ones. This is why additional files, like .bash_profile can be seen. 
 ![image](https://user-images.githubusercontent.com/40574565/212201884-79c3025d-5251-4c18-9657-b4310fd2f703.png)
