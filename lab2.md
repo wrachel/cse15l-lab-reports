@@ -31,7 +31,9 @@ Failure-inducing input: {1, 1, 1, 10, 20, 3}
     assertEquals(11.0, ArrayExamples.averageWithoutLowest(input1), 0.1);
   }
 ```
-
+JUnit test for failure-inducing input:
+![image](https://user-images.githubusercontent.com/40574565/215363587-1d99e95b-6d64-4fd4-b518-2508ece98e6a.png)
+This is a failure-inducing input because the lowest number (1) repeats multiple times in the input array. But, when calculating the average, the method only does the 'arr.length - 1'
 
 Input that doesn't induce a failure: {1, 2, 3, 4}
 ```java
