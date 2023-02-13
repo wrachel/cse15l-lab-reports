@@ -92,3 +92,30 @@ find . -type f -size +100k -size -200k
 In this command, find searches for files (based on the `-type f` in the command), in the current working directory (based on the `.` in the command) for files that are above 100 kilobytes and below 200 kilobytes. In the command, the -size specifies we are looking for a file of a certain size, and the +100k specifies the file is above 100 kilobytes, and the -200k specifies the file is below 200 kilobytes (k attribute means kilobytes). This command would be helpful for someone who wants to find a file of a certain size, e.g. to delete very large files or very small files. 
 
 [cite](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+
+# -maxdepth
+`-maxdepth` limits the depth of the search to a certain number 
+
+Example 1:
+**COMMAND:**
+```
+find . -maxdepth 1 -type d
+```
+
+**OUTPUT:**
+![image](https://user-images.githubusercontent.com/40574565/218362675-30b5f94a-fb8c-4396-927b-0849bb2bcb4c.png)
+
+**Explanation**
+
+[cite](https://www.redhat.com/sysadmin/linux-find-command)
+
+Example 2:
+**COMMAND:**
+```
+find . -maxdepth 3 -type f
+```
+**OUTPUT:**
+![image](https://user-images.githubusercontent.com/40574565/218363134-16aa7b30-b494-4079-85f8-ae6d3b3d9210.png)
+**Explanation**
+
+[cite](https://www.redhat.com/sysadmin/linux-find-command)
