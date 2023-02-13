@@ -26,6 +26,7 @@ In this command, the find searches through '.' or the current working directory 
 [source](https://www.tecmint.com/35-practical-examples-of-linux-find-command/#:~:text=The%20find%20command%20is%20used,size%2C%20and%20other%20possible%20criteria.)
 
 Example 2:
+
 **COMMAND:**
 ```
 find non-fiction -name "*.txt"
@@ -43,6 +44,7 @@ In this command, the find searches through the directory `non-fiction` from the 
 `-type` allows users to search for files based on their type
 
 Example 1:
+
 **COMMAND:**
 ```
 find . -type d
@@ -56,6 +58,7 @@ In this command, the -type searches based on a certain type, and that type is di
 [cite](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 Example 2:
+
 **COMMAND:**
 ```
 find travel_guides/berlitz1 -type f
@@ -70,6 +73,7 @@ In this command, the -type searches based on a certain type, and that type is a 
 -size finds files based on its size
 
 Example 1:
+
 **COMMAND:**
 ```
 find non-fiction/OUP -type f -size 10k
@@ -82,6 +86,7 @@ In this command, find searches for files (specifically files based on the `-type
 [cite](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 Example 2:
+
 **COMMAND:**
 ```
 find . -type f -size +100k -size -200k
@@ -97,6 +102,7 @@ In this command, find searches for files (based on the `-type f` in the command)
 `-maxdepth` limits the depth of the search to a certain number 
 
 Example 1:
+
 **COMMAND:**
 ```
 find . -maxdepth 1 -type d
@@ -110,6 +116,7 @@ find . -maxdepth 1 -type d
 [cite](https://www.redhat.com/sysadmin/linux-find-command)
 
 Example 2:
+
 **COMMAND:**
 ```
 find . -maxdepth 3 -type f
