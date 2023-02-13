@@ -8,7 +8,9 @@ A little information about find:
 
 find searches the directory tree starting from the working directory (or directory specified), and can be used to find files based on certain conditions (e.g. file name, content, etc.)
 
-[source](https://man7.org/linux/man-pages/man1/find.1.html) [source](https://www.tecmint.com/35-practical-examples-of-linux-find-command/#:~:text=The%20find%20command%20is%20used,size%2C%20and%20other%20possible%20criteria.)
+[source](https://man7.org/linux/man-pages/man1/find.1.html) 
+
+[source](https://www.tecmint.com/35-practical-examples-of-linux-find-command/#:~:text=The%20find%20command%20is%20used,size%2C%20and%20other%20possible%20criteria.)
 
 # -name
 -name finds files based on the file's name
