@@ -8,7 +8,7 @@ A little information about find:
 find searches the directory tree starting from the working directory (or directory specified), and can be used to find files based on certain conditions (e.g. file name, content, etc.)
 [source](https://man7.org/linux/man-pages/man1/find.1.html) [source](https://www.tecmint.com/35-practical-examples-of-linux-find-command/#:~:text=The%20find%20command%20is%20used,size%2C%20and%20other%20possible%20criteria.)
 
-### -name
+# -name
 
 Example 1: 
 
@@ -39,7 +39,7 @@ In this command, the find searches through the directory `non-fiction` from the 
 
 [source](https://www.tecmint.com/35-practical-examples-of-linux-find-command/#:~:text=The%20find%20command%20is%20used,size%2C%20and%20other%20possible%20criteria.)
 
-### -type
+# -type
 `-type` allows users to search for files based on their type
 **COMMAND:**
 ```
@@ -52,3 +52,13 @@ find . -type d
 In this command, the -type searches for commands based on a certain type, and that type is directories because of the 'd' descriptor. As seen in the output, this command prints all the directories in the current working directory. In this case, it is the current working direcoty (the directory /written_2) because of the `.` in the command. This command is helpful for if someone would want to know all the subdirectories within a directory (if there are too many subdirectories that contain other subdirectories, it would be annoying to sort through all of them.  
 
 [cite](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+
+**COMMAND:**
+```
+find travel_guides/berlitz1 -type f
+```
+**OUTPUT:**
+![image](https://user-images.githubusercontent.com/40574565/218358585-0555c09f-f16b-4148-9a83-90ffea66a55f.png)
+**Explanation**
+
+
