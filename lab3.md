@@ -29,7 +29,7 @@ find . -name "P*.txt"
 
 In this command, the find searches through '.' or the current working directory (in this example, the image containing the output also lists the working directory for reference). Then, the `-name` command searches through the file names, and returns all file-names that match the condition "P*.txt", or all txt files that start with a P. This command is useful for someone who would want to find a specific file within their file directory that starts with a certain letter (e.g. if they forgot the name of the file, but only remembered the first letter). This would be espeically helpful for someone with a lot of files, where it would be too tiring to search through all the files by hand. 
 
-[source](https://www.tecmint.com/35-practical-examples-of-linux-find-command/#:~:text=The%20find%20command%20is%20used,size%2C%20and%20other%20possible%20criteria.)
+[citation source](https://www.tecmint.com/35-practical-examples-of-linux-find-command/#:~:text=The%20find%20command%20is%20used,size%2C%20and%20other%20possible%20criteria.)
 
 Example 2:
 
@@ -47,7 +47,7 @@ find non-fiction -name "*.txt"
 
 In this command, the find searches through the directory `non-fiction` from the working directory (currently in `written_2`). The `-name` command-line argument searches through all the file names that match the condition `*.txt`, or files that end with .txt.  This would be helpful for someone who would want to find all files that contain .txt in its name (e.g. txt files).
 
-[source](https://www.tecmint.com/35-practical-examples-of-linux-find-command/#:~:text=The%20find%20command%20is%20used,size%2C%20and%20other%20possible%20criteria.)
+[citation source](https://www.tecmint.com/35-practical-examples-of-linux-find-command/#:~:text=The%20find%20command%20is%20used,size%2C%20and%20other%20possible%20criteria.)
 
 # -type
 
@@ -68,7 +68,7 @@ find . -type d
 
 In this command, the -type searches based on a certain type, and that type is directories because of the 'd' descriptor. As seen in the output, this command prints all the directories in the current working directory. In this case, it is the current working direcoty (the directory /written_2) because of the `.` in the command. This command is helpful for if someone would want to know all the subdirectories within a directory (if there are too many subdirectories that contain other subdirectories, it would be annoying to sort through all of them.  
 
-[cite](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+[citation source](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 Example 2:
 
@@ -85,7 +85,8 @@ find travel_guides/berlitz1 -type f
 **Explanation**
 
 In this command, the -type searches based on a certain type, and that type is a regular file because of the 'f' descriptor. As seen in the output, this command prints all the files in the directory travel_guides/berlitz1 based on the `travel_guides/berlitz1` in the argument. This command is helpful for finding all files in a specific directory, if a user would want to see what files a directory and its subdirectory might contain.   
-[cite](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+
+[citation source](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 # -size 
 -size finds files based on its size
@@ -105,7 +106,7 @@ find non-fiction/OUP -type f -size 10k
 
 In this command, find searches for files (specifically files based on the `-type f` in the command) in the directory non-fiction/OUP (specified in the command) with a size of exactly 10 kilobytes. This is because the `-size` has the descriptor `10k`, where k stands for kilobytes and 10 is the number of kilobytes. This command would be helpful for a user trying to find a file based on a certain size.  
 
-[cite](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+[citation source](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 Example 2:
 
@@ -123,7 +124,7 @@ find . -type f -size +100k -size -200k
 
 In this command, find searches for files (based on the `-type f` in the command), in the current working directory (based on the `.` in the command) for files that are above 100 kilobytes and below 200 kilobytes. In the command, the -size specifies we are looking for a file of a certain size, and the +100k specifies the file is above 100 kilobytes, and the -200k specifies the file is below 200 kilobytes (k attribute means kilobytes). This command would be helpful for someone who wants to find a file of a certain size, e.g. to delete very large files or very small files. 
 
-[cite](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+[citation source](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 # -maxdepth
 `-maxdepth` limits the depth of the search to a certain number 
@@ -144,7 +145,7 @@ find . -maxdepth 1 -type d
 
 This command uses find to search the current directory (based on the `.` in the command) for directories (based on the `-type d` in the command) with a maximum depth of 1. This means the command returns all subdirectories up to a depth of 1 (based on the `-maxdepth 1` in the command), since the 1 after maxdepth specifies the maximum depth to be searched. This command is helpful for someone who many have many many directories and subdirectories, but only wants to search a shallow portion. 
 
-[cite](https://www.redhat.com/sysadmin/linux-find-command)
+[citation source](https://www.redhat.com/sysadmin/linux-find-command)
 
 Example 2:
 
@@ -162,4 +163,4 @@ find . -maxdepth 3 -type f
 
 This command uses find to search the current directory (based on the `.` in the command) for files (based on the `-type f` in the command) with a maximum depth of 3. This means the command returns all files up to a depth of 3 (based on the `-maxdepth 3` in the command, with 3 specifying the depth). As seen in the screenshot of the output, the command displays multiple files up to a depth of 3. For example, `files in travel_guides/berlitz1/*.txt` are files with a depth of 3. This command is really helpful for someone who may be working in a very large director with many subdirectories and subfiles, but needs to find all the files that are relatively close to the working directory.
 
-[cite](https://www.redhat.com/sysadmin/linux-find-command)
+[citation source](https://www.redhat.com/sysadmin/linux-find-command)
