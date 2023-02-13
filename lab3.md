@@ -9,7 +9,7 @@ find searches the directory tree starting from the working directory (or directo
 [source](https://man7.org/linux/man-pages/man1/find.1.html) [source](https://www.tecmint.com/35-practical-examples-of-linux-find-command/#:~:text=The%20find%20command%20is%20used,size%2C%20and%20other%20possible%20criteria.)
 
 # -name
-
+-name finds files based on the file's name
 Example 1: 
 
 **COMMAND:**
@@ -41,6 +41,8 @@ In this command, the find searches through the directory `non-fiction` from the 
 
 # -type
 `-type` allows users to search for files based on their type
+
+Example 1:
 **COMMAND:**
 ```
 find . -type d
@@ -49,10 +51,11 @@ find . -type d
 ![image](https://user-images.githubusercontent.com/40574565/218357849-ff226654-c145-4dac-8d99-969df6bcc4ec.png)
 
 **Explanation**
-In this command, the -type searches for commands based on a certain type, and that type is directories because of the 'd' descriptor. As seen in the output, this command prints all the directories in the current working directory. In this case, it is the current working direcoty (the directory /written_2) because of the `.` in the command. This command is helpful for if someone would want to know all the subdirectories within a directory (if there are too many subdirectories that contain other subdirectories, it would be annoying to sort through all of them.  
+In this command, the -type searches based on a certain type, and that type is directories because of the 'd' descriptor. As seen in the output, this command prints all the directories in the current working directory. In this case, it is the current working direcoty (the directory /written_2) because of the `.` in the command. This command is helpful for if someone would want to know all the subdirectories within a directory (if there are too many subdirectories that contain other subdirectories, it would be annoying to sort through all of them.  
 
 [cite](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
+Example 2:
 **COMMAND:**
 ```
 find travel_guides/berlitz1 -type f
@@ -60,5 +63,32 @@ find travel_guides/berlitz1 -type f
 **OUTPUT:**
 ![image](https://user-images.githubusercontent.com/40574565/218358585-0555c09f-f16b-4148-9a83-90ffea66a55f.png)
 **Explanation**
+In this command, the -type searches based on a certain type, and that type is a regular file because of the 'f' descriptor. As seen in the output, this command prints all the files in the directory travel_guides/berlitz1 based on the `travel_guides/berlitz1` in the argument. This command is helpful for finding all files in a specific directory, if a user would want to see what files a directory and its subdirectory might contain.   
+[cite](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
+# -size 
+-size finds files based on its size
 
+Example 1:
+**COMMAND:**
+```
+find non-fiction/OUP -type f -size 10k
+```
+**OUTPUT**:
+![image](https://user-images.githubusercontent.com/40574565/218360586-89db82a4-e0b7-4af9-a11f-33df2a8bc5de.png)
+**Explanation**
+In this command, find searches for files (specifically files based on the `-type f` in the command) in the directory non-fiction/OUP (specified in the command) with a size of exactly 10 kilobytes. This is because the `-size` has the descriptor `10k`, where k stands for kilobytes and 10 is the number of kilobytes. This command would be helpful for a user trying to find a file based on a certain size.  
+
+[cite](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+
+Example 2:
+**COMMAND:**
+```
+find . -type f -size +100k -size -200k
+```
+**OUTPUT:**
+![image](https://user-images.githubusercontent.com/40574565/218360744-1ae18313-b9d0-427f-9a1a-84bdfb4e1300.png)
+**Explanation**
+In this command, find searches for files (based on the `-type f` in the command), in the current working directory (based on the `.` in the command) for files that are above 100 kilobytes and below 200 kilobytes. In the command, the -size specifies we are looking for a file of a certain size, and the +100k specifies the file is above 100 kilobytes, and the -200k specifies the file is below 200 kilobytes (k attribute means kilobytes). This command would be helpful for someone who wants to find a file of a certain size, e.g. to delete very large files or very small files. 
+
+[cite](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
