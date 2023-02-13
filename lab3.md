@@ -1,6 +1,6 @@
 # Lab 3
 
-### Exploring 'find'
+# Exploring 'find'
 
 In this lab, I will be exploring the different command-line options for the command `find`
 
@@ -142,6 +142,8 @@ find . -maxdepth 1 -type d
 
 **Explanation**
 
+This command uses find to search the current directory (based on the `.` in the command) for directories (based on the `-type d` in the command) with a maximum depth of 1. This means the command returns all subdirectories up to a depth of 1 (based on the `-maxdepth 1` in the command), since the 1 after maxdepth specifies the maximum depth to be searched. This command is helpful for someone who many have many many directories and subdirectories, but only wants to search a shallow portion. 
+
 [cite](https://www.redhat.com/sysadmin/linux-find-command)
 
 Example 2:
@@ -157,5 +159,7 @@ find . -maxdepth 3 -type f
 ![image](https://user-images.githubusercontent.com/40574565/218363134-16aa7b30-b494-4079-85f8-ae6d3b3d9210.png)
 
 **Explanation**
+
+This command uses find to search the current directory (based on the `.` in the command) for files (based on the `-type f` in the command) with a maximum depth of 3. This means the command returns all files up to a depth of 3 (based on the `-maxdepth 3` in the command, with 3 specifying the depth). As seen in the screenshot of the output, the command displays multiple files up to a depth of 3. For example, `files in travel_guides/berlitz1/*.txt` are files with a depth of 3. This command is really helpful for someone who may be working in a very large director with many subdirectories and subfiles, but needs to find all the files that are relatively close to the working directory.
 
 [cite](https://www.redhat.com/sysadmin/linux-find-command)
