@@ -40,7 +40,7 @@ Keys pressed:
 
 ![image](https://user-images.githubusercontent.com/40574565/221517530-54398f6f-0cb4-4ddf-97e5-80350150e82b.png)
 
-```<down arrow (held down arrow until I reached the desired line)><left arrow><backspace><2><Ctrl-X><y><enter>```
+Keys pressed: ```<down arrow (held down arrow until I reached the desired line)><left arrow><backspace><2><Ctrl-X><y><enter>```
 
 ![image](https://user-images.githubusercontent.com/40574565/221517195-e6912c0c-8646-49dc-befb-e35129a0a8de.png)
 
