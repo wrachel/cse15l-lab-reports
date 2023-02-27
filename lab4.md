@@ -11,7 +11,7 @@ I had the command `ssh cs15lwi23aup@ieng6.ucsd.edu` already typed into the termi
 When I pressed enter I did not have to type in my password since previously, I copied the public ssh key from my local computer to the remote account. This makes it faster, since everytimg I log in I no longer have to type a password everytime I use ssh to access the remote computer. 
 
 ### Step 5: Clone your fork of the repository from your Github account
-Keys pressed: git clone ```<Ctrl-C><left click on terminal><Ctrl-V><enter>```
+Keys pressed: ```git clone``` ```<Ctrl-C><left click on terminal><Ctrl-V><enter>```
 ![image](https://user-images.githubusercontent.com/40574565/221512230-cc31ba29-4d12-4239-95dd-9aebbbb3cdad.png)
 
 I had used ```<Ctrl-C>``` to copy `git@github.com:wrachel/lab7.git`. I got this from my forked repository (depicted below).
