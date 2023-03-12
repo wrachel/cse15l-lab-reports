@@ -21,3 +21,7 @@ git add ListExample.java
 git commit -m "fixed"
 git push
 ```
+
+NOTE: in the original lab, I did not use the command `sed -i '43s/index1 += 1;/index2 += 1;/g' ListExamples.java`. Instead, I used nano to open the file and then edited the file using nano. However, since I could not do this in a bash script, I used the `sed` command to edit line 43 (the location in the file that was causing the error), and edited the line so that it would no longer cause an error. 
+
+If I were to put these commands in a bash file, it would look like the screenshot below:
